@@ -1,0 +1,214 @@
+.container {
+  display: flex;
+}
+
+/* STYLE TILES FOR TEAMS NBA PRESENTATION */
+.container-standings {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: stretch;*/
+  flex-wrap: wrap;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  color: darkslategrey;
+}
+
+.tile-item,
+.game-item {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  /*border styling*/
+  border: 1px solid gray;
+}
+
+.tile-item:not(:last-child),
+.game-item:not(:last-child) {
+  border-bottom: none;
+}
+
+.rank {
+  flex: 1 1 5%;
+  border-right: 1px solid gray;
+  padding-right: 5px;
+}
+
+.team-name,
+.away-team-name,
+.home-team-name {
+  margin-left: 10px;
+  flex: 1 1 50%;
+
+  border-right: 1px solid gray;
+}
+
+.win {
+  margin-left: 10px;
+  flex: 1 1 20%;
+  border-right: 1px solid gray;
+}
+
+.loss,
+.points-home,
+.points-away {
+  margin-left: 10px;
+  flex: 1 1 20%;
+}
+
+.img_sm_logo {
+  max-width: 30px;
+  padding-left: 10px;
+}
+
+/* STYLE TILES FOR GAMES NBA */
+
+.container-games {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 10px;
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: stretch;*/
+  flex-wrap: wrap;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  color: darkslategrey;
+}
+
+.vs-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.away-team-name,
+.home-team-name {
+  padding-right: 10px;
+}
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #1b1b1b;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #95a5a6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  border: 1px solid #ecf0f1;
+  background: #ffffff;
+  padding: 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"],
+focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.btn-nba {
+  width: 100px;
+  height: 30px;
+  margin: 10px auto;
+  background-color: rgb(27, 27, 27);
+  color: #ffffff;
+}
+
+/* STYLE TILES FOR CALENDAR */
+
+.calendar-container {
+  width: 400px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 2%;
+  color: cadetblue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.day-of-week,
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.day-of-week {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.calendar-days {
+  margin-top: 10px;
+  padding: 5px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calendar-months {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 5px;
+  color: darkcyan;
+}
+
+.year {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.btn-left,
+.btn-right {
+  color: darkcyan;
+  font-size: 1.3rem;
+}
+
+.year-item {
+}
+
+.container-flex {
+}
+
+.item-flex {
+}
+
+.empty-cell {
+  background-color: lightgray;
+}
