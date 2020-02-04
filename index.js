@@ -1,5 +1,5 @@
-import Games from "./modules/Games";
-import Standings from "./modules/Standings";
+import Games from "./Games";
+import Standings from "./Standings";
 
 //---------------------------------------------------------------------------------------------------------
 //-----------------------------------------------DATA CONTROLLER-------------------------------------------
